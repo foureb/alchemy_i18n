@@ -22,10 +22,10 @@ module AlchemyI18n
 
       def append_assets
         additional_locales.each do |locale|
-          append_file 'vendor/assets/javascripts/alchemy/admin/all.js', <<~ASSETS
-            //= require alchemy_i18n/#{locale}
-            //= require select2_locale_#{locale}
-          ASSETS
+          # append_file 'vendor/assets/javascripts/alchemy/admin/all.js', <<~ASSETS
+          #  //= require alchemy_i18n/#{locale}
+          #  //= require select2_locale_#{locale}
+          # ASSETS
         end
       end
 
